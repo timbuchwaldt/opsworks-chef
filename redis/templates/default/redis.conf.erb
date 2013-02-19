@@ -66,7 +66,7 @@ dbfilename dump.rdb
 
 # For default save/load DB in/from the working directory
 # Note that you must specify a directory not a file name.
-dir /var/lib/redis
+dir <%= node['redis']['storage-dir'] %>
 
 ################################# REPLICATION #################################
 
